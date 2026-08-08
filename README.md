@@ -73,17 +73,17 @@ Here are some example results where we use these models to stylize an
 image of the Chicago skyline at an image size of 512:
 
 <div align='center'>
-  <img src='images/content/chicago.jpg' height="185px">
+  <img src='img/content/chicago.jpg' height="185px">
 </div>
-<img src='images/styles/starry_night_crop.jpg' height="155px">
-<img src='images/styles/la_muse.jpg' height="155px">
-<img src='images/styles/composition_vii.jpg' height='155px'>
-<img src='images/styles/wave_crop.jpg' height='155px'>
+<img src='img/styles/starry_night_crop.jpg' height="155px">
+<img src='img/styles/la_muse.jpg' height="155px">
+<img src='img/styles/composition_vii.jpg' height='155px'>
+<img src='img/styles/wave_crop.jpg' height='155px'>
 <br>
-<img src='images/outputs/eccv16/chicago_starry_night.jpg' height="142px">
-<img src='images/outputs/eccv16/chicago_la_muse.jpg' height="142px">
-<img src='images/outputs/eccv16/chicago_composition_vii.jpg' height="142px">
-<img src='images/outputs/eccv16/chicago_wave.jpg' height="142px">
+<img src='img/outputs/eccv16/chicago_starry_night.jpg' height="142px">
+<img src='img/outputs/eccv16/chicago_la_muse.jpg' height="142px">
+<img src='img/outputs/eccv16/chicago_composition_vii.jpg' height="142px">
+<img src='img/outputs/eccv16/chicago_wave.jpg' height="142px">
 
 ## Models with instance normalization
 Replacing batch normalization with instance normalization significantly improves the quality
@@ -99,20 +99,20 @@ without sacrificing model quality.
 Here are some example outputs from these models, with an image size of 1024:
 
 <div align='center'>
-  <img src='images/styles/candy.jpg' height='174px'>
-  <img src='images/outputs/chicago_candy.jpg' height="174px">
-  <img src='images/outputs/chicago_udnie.jpg' height="174px">
-  <img src='images/styles/udnie.jpg' height='174px'>
+  <img src='img/styles/candy.jpg' height='174px'>
+  <img src='img/outputs/chicago_candy.jpg' height="174px">
+  <img src='img/outputs/chicago_udnie.jpg' height="174px">
+  <img src='img/styles/udnie.jpg' height='174px'>
   <br>
-  <img src='images/styles/the_scream.jpg' height='174px'>
-  <img src='images/outputs/chicago_scream.jpg' height="174px">
-  <img src='images/outputs/chicago_mosaic.jpg' height="174px">
-  <img src='images/styles/mosaic.jpg' height='174px'>
+  <img src='img/styles/the_scream.jpg' height='174px'>
+  <img src='img/outputs/chicago_scream.jpg' height="174px">
+  <img src='img/outputs/chicago_mosaic.jpg' height="174px">
+  <img src='img/styles/mosaic.jpg' height='174px'>
   <br>
-  <img src='images/styles/feathers.jpg' height='173px'>
-  <img src='images/outputs/chicago_feathers.jpg' height="173px">
-  <img src='images/outputs/chicago_muse.jpg' height="173px">
-  <img src='images/styles/la_muse.jpg' height='173px'>
+  <img src='img/styles/feathers.jpg' height='173px'>
+  <img src='img/outputs/chicago_feathers.jpg' height="173px">
+  <img src='img/outputs/chicago_muse.jpg' height="173px">
+  <img src='img/styles/la_muse.jpg' height='173px'>
 </div>
 
 ## Running on new images
@@ -158,12 +158,6 @@ qlua webcam_demo.lua \
   -models models/instance_norm/candy.t7,models/instance_norm/udnie.t7 \
   -gpu 0
 ```
-
-With a Pascal Titan X you can easily run four models in realtime at 640x480:
-
-<div align='center'>
-  <img src='images/webcam.gif' width='700px'>
-</div>
 
 The webcam demo depends on a few extra Lua packages:
 - `camera`
