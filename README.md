@@ -9,9 +9,9 @@ This repository also includes an implementation of instance normalization. Repla
 Stylizing an image at a resolution of 1200x630 takes **50 milliseconds** on a Pascal Titan X:
 
 <div align='center'>
-  <img src='images/styles/candy.jpg' height="225px">
-  <img src='images/content/hoovertowernight.jpg' height="225px">
-  <img src='images/outputs/hoovertowernight_candy.jpg' height="346px">
+  <img src='img/styles/candy.jpg' height="225px">
+  <img src='img/content/hoovertowernight.jpg' height="225px">
+  <img src='img/outputs/hoovertowernight_candy.jpg' height="346px">
 </div>
 
 In this repository we provide:
